@@ -1,4 +1,5 @@
 # db_utils.py
+import yaml
 
 class RDSDatabaseConnector:
     def __init__(self, credentials: dict):
