@@ -1,4 +1,4 @@
-# Website Analytics and Revenue Analysis
+Exploratory Data Analysis - Online Shopping in Retail
 
 ## Overview
 
@@ -29,13 +29,11 @@ This project provides an in-depth analysis of website traffic, user behavior, an
 
 You can install the required packages using pip:
 
-```bash
+
 pip install pandas numpy sqlalchemy matplotlib seaborn scipy pyyaml
 Clone the Repository
-bash
+git clone https://github.com/syedab1712/Exploratory-Data-Analysis---Online-Shopping-in-Retail.git
 
-git clone https://github.com/your-repo/website-analytics.git
-cd website-analytics
 Usage
 Load Data: Ensure your credentials.yaml file is configured correctly to connect to your RDS database. The db_utils.py script fetches data from an RDS database using credentials stored in the credentials.yaml file.
 Example credentials.yaml structure:
@@ -49,7 +47,7 @@ RDS_DATABASE: your-database-name
 RDS_PORT: 5432
 Run the script to fetch the data and save it as a CSV file:
 
-bash
+
 
 python db_utils.py
 Run the Analysis: After fetching the data, the script performs analyses and generates visualizations, helping the team understand:
@@ -63,11 +61,11 @@ Bounce rates by traffic type and region
 Traffic generating the most revenue by region
 To run the analysis, execute the following command:
 
-bash
+
 
 python db_utils.py
 File Structure
-bash
+
 
 ├── db_utils.py          # Main script containing all analysis and visualizations
 ├── credentials.yaml     # YAML file for storing database credentials
